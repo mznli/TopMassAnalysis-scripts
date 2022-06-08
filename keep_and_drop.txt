@@ -1,0 +1,13 @@
+# this is a comment
+#keep *
+drop *
+keep event
+keep *LHEPart*
+keep *GenPart*
+keep nMuon
+keep Muon*
+keep nElectron
+keep Electron*
+keep nJet
+keep Jet*
+keep ToMaAn*
