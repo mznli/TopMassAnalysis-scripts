@@ -25,16 +25,35 @@ class SemiLepBDecayTagger(Module):
         self.histos={
         }
         self.histos['nEles'] = ROOT.TH1I( 'nEles', ';nr of es; Events',3,-0.5,2.5)
-        self.histos['nMus'] = ROOT.TH1I( 'nMus', ';nr of #mu s; Events',3,-0.5,2.5)
-        self.histos['nTaus'] = ROOT.TH1I( 'nTaus', ';nr of #tau s; Events',3,-0.5,2.5)
+        self.histos['nMus'] = ROOT.TH1I( 'nMus', ';nr of #mus; Events',3,-0.5,2.5)
+        self.histos['nTaus'] = ROOT.TH1I( 'nTaus', ';nr of #taus; Events',3,-0.5,2.5)
         self.histos['lepW_M'] = ROOT.TH1F( 'lepW_M', ';mass of leptonic W; Events',160,0,160)
         self.histos['hadW_M'] = ROOT.TH1F( 'hadW_M', ';mass of hadronic W; Events',160,0,160)
         self.histos['lepTop_M'] = ROOT.TH1F( 'lepTop_M', ';mass of leptonic Top; Events',150,100,250)
         self.histos['hadTop_M'] = ROOT.TH1F( 'hadTop_M', ';mass of hadronic Top; Events',150,100,250)
         self.histos['nSemiMuBDecays'] = ROOT.TH1I( 'nSemiMuBDecays', ';nr of semi-#mu B Decays; Events',3,-0.5,2.5)
-        self.histos['nRecMus'] = ROOT.TH1I( 'nRecMus', ';nr of reconstructed #mu s; Events',6,-0.5,5.5)
-        self.histos['RecMu_pt'] = ROOT.TH1F( 'RecMu_pt', ';#mu s p_T^; Events',200,0.,200.)
+        self.histos['nRecMus'] = ROOT.TH1I( 'nRecMus', ';nr of reconstructed #mus; Events',6,-0.5,5.5)
+        self.histos['RecMu_pt'] = ROOT.TH1F( 'RecMu_pt', ';#mus p_T; Muons',200,0.,200.)
+        self.histos['RecMu_eta'] = ROOT.TH1F( 'RecMu_eta', ';#mus #eta; Muons',60,-3.,3.)
+        self.histos['RecMu_phi'] = ROOT.TH1F( 'RecMu_phi', ';#mus #phi; Muons',63,-3.15,3.15)
+        self.histos['RecMu_isTight'] = ROOT.TH1I( 'RecMu_isTight', ';#mus tightId; Muons',2,0,2)
+        self.histos['RecMu_isTracker_beforeTightId'] = ROOT.TH1I( 'RecMu_isTracker_beforeTightId', ';#mus isTracker; Muons',2,0,2)
+        self.histos['RecMu_isGlobal_beforeTightId'] = ROOT.TH1I( 'RecMu_isGlobal_beforeTightId', ';#mus isGlobal; Muons',2,0,2)
+        self.histos['RecMu_nTrackerLayers_beforeTightId'] = ROOT.TH1I( 'RecMu_nTrackerLayers_beforeTightId', ';#mus nTrackerLayers; Muons',20,0,20)
+        self.histos['RecMu_nStations_beforeTightId'] = ROOT.TH1I( 'RecMu_nStations_beforeTightId', ';#mus nStations; Muons',6,0,6)
+        self.histos['RecMu_highPurity_beforeTightId'] = ROOT.TH1I( 'RecMu_highPurity_beforeTightId', ';#mus highPurity; Muons',2,0,2)
+        self.histos['RecMu_segmentComp_beforeTightId'] = ROOT.TH1F( 'RecMu_segmentComp_beforeTightId', ';#mus segmentComp; Muons',100,0.,1.)
+        self.histos['RecMu_isTracker'] = ROOT.TH1I( 'RecMu_isTracker', ';#mus isTracker; Muons',2,0,2)
+        self.histos['RecMu_isGlobal'] = ROOT.TH1I( 'RecMu_isGlobal', ';#mus isGlobal; Muons',2,0,2)
+        self.histos['RecMu_nTrackerLayers'] = ROOT.TH1I( 'RecMu_nTrackerLayers', ';#mus nTrackerLayers; Muons',20,0,20)
+        self.histos['RecMu_nStations'] = ROOT.TH1I( 'RecMu_nStations', ';#mus nStations; Muons',6,0,6)
+        self.histos['RecMu_highPurity'] = ROOT.TH1I( 'RecMu_highPurity', ';#mus highPurity; Muons',2,0,2)
+        self.histos['RecMu_segmentComp'] = ROOT.TH1F( 'RecMu_segmentComp', ';#mus segmentComp; Muons',100,0.,1.)
+        self.histos['RecMu_relIso'] = ROOT.TH1F( 'RecMu_relIso', ';#mus relIso; Muons',40,0.,2.)
+        self.histos['nGoodRecMus'] = ROOT.TH1I( 'nGoodRecMus', ';nr of good reconstructed #mus; Events',6,-0.5,5.5)
         self.nrSemiMuBDecays = 0
+
+
 
 
     def endFile(self, inputFile, outputFile, inputTree, wrappedOutputTree):
@@ -163,10 +182,51 @@ class SemiLepBDecayTagger(Module):
         #--------------------------------------------
 
         muons = Collection(event, "Muon")
+        good_muons = []
         for m in muons:
-            self.histos[ 'RecMu_pt' ].Fill( m.pt  )
+            self.histos[ 'RecMu_pt' ].Fill( m.pt )
+            self.histos[ 'RecMu_eta' ].Fill( m.eta )
+            self.histos[ 'RecMu_phi' ].Fill( m.phi )
+
             self.out.fillBranch("ToMaAn_RecMu_pt", m.pt)
 
+            # pt cut
+            if m.pt < 20: continue
+
+            # eta cut
+            if abs(m.eta) > 2.4: continue
+
+            self.histos[ 'RecMu_isTight' ].Fill( m.tightId )
+            self.histos[ 'RecMu_isTracker_beforeTightId' ].Fill( m.isTracker )
+            self.histos[ 'RecMu_isGlobal_beforeTightId' ].Fill( m.isGlobal )
+            self.histos[ 'RecMu_nTrackerLayers_beforeTightId' ].Fill( m.nTrackerLayers )
+            self.histos[ 'RecMu_nStations_beforeTightId' ].Fill( m.nStations )
+            self.histos[ 'RecMu_highPurity_beforeTightId' ].Fill( m.highPurity )
+            self.histos[ 'RecMu_segmentComp_beforeTightId' ].Fill( m.segmentComp )
+            
+            # tight id 
+            if not m.tightId: continue
+
+            self.histos[ 'RecMu_isTracker' ].Fill( m.isTracker )
+            self.histos[ 'RecMu_isGlobal' ].Fill( m.isGlobal )
+            self.histos[ 'RecMu_nTrackerLayers' ].Fill( m.nTrackerLayers )
+            self.histos[ 'RecMu_nStations' ].Fill( m.nStations )
+            self.histos[ 'RecMu_highPurity' ].Fill( m.highPurity )
+            self.histos[ 'RecMu_segmentComp' ].Fill( m.segmentComp )
+
+            self.histos[ 'RecMu_relIso' ].Fill( m.pfRelIso04_all )
+
+            # tight iso
+            # according to the following page:
+            # https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideMuonSelection#Particle_Flow_isolation
+            # the tight working point is equivalent to cut value < 0.15
+            if m.pfRelIso04_all > 0.15: continue
+
+            # now save good muons
+            good_muons.append(m)
+
+
+        self.histos[ 'nGoodRecMus' ].Fill( len(good_muons) )
         self.histos[ 'nRecMus' ].Fill( event.nMuon  )
 
         return True
