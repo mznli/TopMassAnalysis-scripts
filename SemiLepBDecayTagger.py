@@ -41,19 +41,46 @@ class SemiLepBDecayTagger(Module):
         self.histos['RecMu_isGlobal_beforeTightId'] = ROOT.TH1I( 'RecMu_isGlobal_beforeTightId', ';#mus isGlobal; Muons',2,0,2)
         self.histos['RecMu_nTrackerLayers_beforeTightId'] = ROOT.TH1I( 'RecMu_nTrackerLayers_beforeTightId', ';#mus nTrackerLayers; Muons',20,0,20)
         self.histos['RecMu_nStations_beforeTightId'] = ROOT.TH1I( 'RecMu_nStations_beforeTightId', ';#mus nStations; Muons',6,0,6)
-        self.histos['RecMu_highPurity_beforeTightId'] = ROOT.TH1I( 'RecMu_highPurity_beforeTightId', ';#mus highPurity; Muons',2,0,2)
         self.histos['RecMu_segmentComp_beforeTightId'] = ROOT.TH1F( 'RecMu_segmentComp_beforeTightId', ';#mus segmentComp; Muons',100,0.,1.)
+        self.histos['RecMu_dxy_beforeTightId'] = ROOT.TH1F( 'RecMu_dxy_beforeTightId', ';#mus ; Muons',30,0.,3.)
+        self.histos['RecMu_dz_beforeTightId'] = ROOT.TH1F( 'RecMu_dz_beforeTightId', ';#mus ; Muons',100,0.,10.)
         self.histos['RecMu_isTracker'] = ROOT.TH1I( 'RecMu_isTracker', ';#mus isTracker; Muons',2,0,2)
         self.histos['RecMu_isGlobal'] = ROOT.TH1I( 'RecMu_isGlobal', ';#mus isGlobal; Muons',2,0,2)
         self.histos['RecMu_nTrackerLayers'] = ROOT.TH1I( 'RecMu_nTrackerLayers', ';#mus nTrackerLayers; Muons',20,0,20)
         self.histos['RecMu_nStations'] = ROOT.TH1I( 'RecMu_nStations', ';#mus nStations; Muons',6,0,6)
-        self.histos['RecMu_highPurity'] = ROOT.TH1I( 'RecMu_highPurity', ';#mus highPurity; Muons',2,0,2)
         self.histos['RecMu_segmentComp'] = ROOT.TH1F( 'RecMu_segmentComp', ';#mus segmentComp; Muons',100,0.,1.)
         self.histos['RecMu_relIso'] = ROOT.TH1F( 'RecMu_relIso', ';#mus relIso; Muons',40,0.,2.)
+        self.histos['RecMu_dxy'] = ROOT.TH1F( 'RecMu_dxy', ';#mus ; Muons',30,0.,3.)
+        self.histos['RecMu_dz'] = ROOT.TH1F( 'RecMu_dz', ';#mus ; Muons',100,0.,10.)
+        self.histos['RecMu_jetIdx'] = ROOT.TH1I( 'RecMu_jetIdx', ';#mus ; Muons',22,-1,21)
         self.histos['nGoodRecMus'] = ROOT.TH1I( 'nGoodRecMus', ';nr of good reconstructed #mus; Events',6,-0.5,5.5)
+        self.histos['DR_recMu_vs_genMu_inSemiMuTTbar'] = ROOT.TH1F( 'DR_recMu_vs_genMu_inSemiMuTTbar', ';#detla R(#mu_gen,#mu_rec); Muons',16,0.,0.8)
+        self.histos['DR_recMu_vs_associatedGenPar_inSemiMuTTbar'] = ROOT.TH1F( 'DR_recMu_vs_associatedGenPar_inSemiMuTTbar', ';#detla R(associatedGenPar,#mu_rec); Muons',16,0.,0.8)
+        self.histos['DR_recMu_vs_associatedGenPar_inOtherTTbar'] = ROOT.TH1F( 'DR_recMu_vs_associatedGenPar_inOtherTTbar', ';#detla R(associatedGenPar,#mu_rec); Muons',16,0.,0.8)
+        self.histos['RecMu_associatedGenPartFlav_inSemiMuTTbar'] = ROOT.TH1I( 'RecMu_associatedGenPartFlav_inSemiMuTTbar', '; associatedGenPar to recMu; Muons',16,0,16)
+        self.histos['RecMu_associatedGenPartFlav_inOtherTTbar'] = ROOT.TH1I( 'RecMu_associatedGenPartFlav_inOtherTTbar', '; associatedGenPar to recMu; Muons',16,0,16)
         self.nrSemiMuBDecays = 0
+        self.nrSoftRecMu = 0
 
 
+        self.histos[ 'jets_nConstituents' ] = ROOT.TH1I( 'jets_nConstituents', ';nConstituents; Jets',50,0,50) 
+        self.histos[ 'jets_muEF' ] = ROOT.TH1F( 'jets_muEF', ';muEF; Jets',100,0.,1.)
+        self.histos[ 'jets_chEmEF' ] = ROOT.TH1F( 'jets_chEmEF', ';chEmEF; Jets',100,0.,1.)
+        self.histos[ 'jets_neEmEF' ] = ROOT.TH1F( 'jets_neEmEF', ';neEmEF; Jets',100,0.,1.)
+        self.histos[ 'jets_chHEF' ] = ROOT.TH1F( 'jets_chHEF', ';chHEF; Jets',100,0.,1.)
+        self.histos[ 'jets_neHEF' ] = ROOT.TH1F( 'jets_neHEF', ';neHEF; Jets',100,0.,1.)
+        self.histos[ 'jets_jetId' ] = ROOT.TH1I( 'jets_jetId', ';jetId; Jets',10,0,10)
+        self.histos['nGoodJets'] = ROOT.TH1I( 'nGoodJets', ';nr of good reconstructed jets; Events',11,-0.5,10.5)
+        self.histos['nrBTaggedJets'] = ROOT.TH1I( 'nrBTaggedJets', ';nr of BTagged jets; Events',5,-0.5,4.5)
+
+        self.histos['softMu_looseId'] = ROOT.TH1I( 'softMu_looseId', ';soft #mus looseId; Muons',2,0,2)
+        self.histos['softMu_mediumId'] = ROOT.TH1I( 'softMu_mediumId', ';soft #mus mediumId; Muons',2,0,2)
+        self.histos['softMu_softMvaId'] = ROOT.TH1I( 'softMu_softMvaId', ';soft #mus softMvaId; Muons',2,0,2)
+        self.histos['softMvaId_vs_mediumId'] = ROOT.TH2I( 'softMvaId_vs_mediumId', ';soft #mus softMvaId; soft #mus mediumId',2,0,2,2,0,2)
+        self.histos['looseId_vs_mediumId'] = ROOT.TH2I( 'looseId_vs_mediumId', ';soft #mus looseId; soft #mus mediumId',2,0,2,2,0,2)
+        self.histos['nSoftMus'] = ROOT.TH1I( 'nSoftMus', ';nr of soft muons; Events',11,-0.5,10.5)
+        self.histos['nGenSoftMus'] = ROOT.TH1I( 'nGenSoftMus', ';nr of soft muons at gen-level; Events',11,-0.5,10.5)
+        self.histos['softMu_associatedGenPartFlav'] = ROOT.TH1I( 'softMu_associatedGenPartFlav', ';the flavour that soft muon is associated to; Muons',16,0,16)
 
 
     def endFile(self, inputFile, outputFile, inputTree, wrappedOutputTree):
@@ -64,6 +91,7 @@ class SemiLepBDecayTagger(Module):
             h.Sumw2()
             h.Write()
         print' -->> total nr of events with SemiMuBDecays are : ', self.nrSemiMuBDecays
+        print' -->> nr of events with SofRecMu is found to be : ', self.nrSoftRecMu
 
     def isBHadron(self, pId):
         if (((pId / 100) % 10 == 5) or (pId >= 5000 and pId <= 5999)):
@@ -100,6 +128,8 @@ class SemiLepBDecayTagger(Module):
 	p4_bs = []
         pdgIds_bs = []
 
+        genMus = []
+
         for part in lheparts:
             pdg = abs(part.pdgId)
 
@@ -119,6 +149,7 @@ class SemiLepBDecayTagger(Module):
             if pdg == 11:
                 nrEles += 1
             if pdg == 13:
+                genMus.append(part)
                 nrMus += 1
             if pdg == 15:
                 nrTaus += 1
@@ -174,8 +205,10 @@ class SemiLepBDecayTagger(Module):
                        self.out.fillBranch("ToMaAn_GenSoftMu_pt", p.pt)
 
         self.histos[ 'nSemiMuBDecays' ].Fill( nrSemiMuBs  )
-        if nrSemiMuBs>0:
-            self.nrSemiMuBDecays+=1
+        # move the following two lines to the end of code, to make a fair comparison 
+        # between nr of soft reconstructed muons with the nr of muons found in B decays
+        #if nrSemiMuBs>0:
+        #    self.nrSemiMuBDecays+=1
 
         #--------------------------------------------
         #--- RecParticles Analysis ------------------
@@ -183,7 +216,10 @@ class SemiLepBDecayTagger(Module):
 
         muons = Collection(event, "Muon")
         good_muons = []
+        good_muons_indices = []
+        m_counter = -1
         for m in muons:
+            m_counter += 1
             self.histos[ 'RecMu_pt' ].Fill( m.pt )
             self.histos[ 'RecMu_eta' ].Fill( m.eta )
             self.histos[ 'RecMu_phi' ].Fill( m.phi )
@@ -201,8 +237,9 @@ class SemiLepBDecayTagger(Module):
             self.histos[ 'RecMu_isGlobal_beforeTightId' ].Fill( m.isGlobal )
             self.histos[ 'RecMu_nTrackerLayers_beforeTightId' ].Fill( m.nTrackerLayers )
             self.histos[ 'RecMu_nStations_beforeTightId' ].Fill( m.nStations )
-            self.histos[ 'RecMu_highPurity_beforeTightId' ].Fill( m.highPurity )
             self.histos[ 'RecMu_segmentComp_beforeTightId' ].Fill( m.segmentComp )
+            self.histos[ 'RecMu_dxy_beforeTightId' ].Fill( m.dxy )
+            self.histos[ 'RecMu_dz_beforeTightId' ].Fill( m.dz )
             
             # tight id 
             if not m.tightId: continue
@@ -211,8 +248,15 @@ class SemiLepBDecayTagger(Module):
             self.histos[ 'RecMu_isGlobal' ].Fill( m.isGlobal )
             self.histos[ 'RecMu_nTrackerLayers' ].Fill( m.nTrackerLayers )
             self.histos[ 'RecMu_nStations' ].Fill( m.nStations )
-            self.histos[ 'RecMu_highPurity' ].Fill( m.highPurity )
             self.histos[ 'RecMu_segmentComp' ].Fill( m.segmentComp )
+            self.histos[ 'RecMu_dxy' ].Fill( m.dxy )
+            self.histos[ 'RecMu_dz' ].Fill( m.dz )
+
+            # the explicit cut values can be found at https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideMuonIdRun2
+            # with the tight id requirement, the below values are implicitly applied. 
+            # isGlobal, nTrackerLayers>=6, nStations>=2, dxy<0.2, dz<0.5
+            # couldn't find equivalent cuts for validPixelHits or validMuonHits to be above 0. Also the normalized 
+            # chi2<10. There is a cut on segmentComp but how one can associate it to the chi2 requirement?
 
             self.histos[ 'RecMu_relIso' ].Fill( m.pfRelIso04_all )
 
@@ -220,14 +264,123 @@ class SemiLepBDecayTagger(Module):
             # according to the following page:
             # https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideMuonSelection#Particle_Flow_isolation
             # the tight working point is equivalent to cut value < 0.15
-            if m.pfRelIso04_all > 0.15: continue
+            if not m.pfRelIso04_all < 0.15: continue
+
+
+            self.histos[ 'RecMu_jetIdx' ].Fill( m.jetIdx )
 
             # now save good muons
             good_muons.append(m)
+            good_muons_indices.append(m_counter)
 
 
         self.histos[ 'nGoodRecMus' ].Fill( len(good_muons) )
         self.histos[ 'nRecMus' ].Fill( event.nMuon  )
+
+        if len(good_muons) == 1: 
+            #to check the genPartFlav method: in the semi-muonic ttbar events, the selected good muon should be 
+            # matched to that generated muon
+            associatedGenPar = particles[good_muons[0].genPartIdx]  
+            if len(genMus) == 1:
+                self.histos[ 'DR_recMu_vs_genMu_inSemiMuTTbar' ].Fill( genMus[0].DeltaR( good_muons[0] )  )
+                self.histos[ 'RecMu_associatedGenPartFlav_inSemiMuTTbar' ].Fill( good_muons[0].genPartFlav )
+                self.histos[ 'DR_recMu_vs_associatedGenPar_inSemiMuTTbar' ].Fill( associatedGenPar.DeltaR( good_muons[0] )  )
+            if not len(genMus) == 1:  
+                self.histos[ 'RecMu_associatedGenPartFlav_inOtherTTbar' ].Fill( good_muons[0].genPartFlav )
+                self.histos[ 'DR_recMu_vs_associatedGenPar_inOtherTTbar' ].Fill( associatedGenPar.DeltaR( good_muons[0] )  )
+
+         
+        if not len(good_muons) == 1: 
+            return False 
+
+        #--------------------------------------------
+        #--- Jet Selection --------------------------
+        #--------------------------------------------
+
+        jets = Collection(event, "Jet")
+        good_jets = []
+        good_bjets_indices = []
+        j_counter = -1
+        for j in jets:
+            j_counter += 1
+            if not j.pt > 30: continue
+            if not abs(j.eta) < 2.4: continue
+            self.histos[ 'jets_jetId' ].Fill( j.jetId )
+            # from https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookNanoAOD#Jets, jetId==6 means 
+            # pass tight and tightLepVeto ID
+            # , also the values of the below identification parameters are cut over according to:
+            # https://twiki.cern.ch/twiki/bin/view/CMS/JetID13TeVUL
+            if j.jetId == 6:
+             self.histos[ 'jets_nConstituents' ].Fill( j.nConstituents )
+             self.histos[ 'jets_muEF' ].Fill( j.muEF )
+             self.histos[ 'jets_chEmEF' ].Fill( j.chEmEF )
+             self.histos[ 'jets_neEmEF' ].Fill( j.neEmEF )
+             self.histos[ 'jets_chHEF' ].Fill( j.chHEF )
+             self.histos[ 'jets_neHEF' ].Fill( j.neHEF )
+
+             good_jets.append(j)
+
+             # asking for b-tag identification
+             # starting from https://twiki.cern.ch/twiki/bin/viewauth/CMS/BtagRecommendation,  the exact wps for Summer20UL16 were 
+             # not available, for the moment the below cut values corresponding to a tight (misId rate ~ 0.1%) selection by deepJet 
+             # b-tag algo are applied:
+             # btagDeepFlavB pre-VFP 2016:  Loose, Medium, Tight: 0.0508, 0.2598, 0.6502
+             # btagDeepFlavB post-VFP 2016: Loose, Medium, Tight: 0.0480, 0.2489, 0.6377
+
+             if not j.btagDeepFlavB > 0.25 : continue # medium criteria
+             #if not j.btagDeepFlavB > 0.64 : continue # tight criteria
+
+             good_bjets_indices.append(j_counter)
+
+        self.histos[ 'nGoodJets' ].Fill( len(good_jets) )
+        self.histos[ 'nrBTaggedJets' ].Fill( len(good_bjets_indices) )
+
+        if not len(good_jets) > 3: 
+            return False 
+
+        # put the BTagged jets requirement with cautious ! 
+        #if not len(good_bjets_indices) > 0: 
+        #    return False 
+
+        #--------------------------------------------
+        #--- Soft Muon Selection --------------------
+        #--------------------------------------------
+
+        good_soft_muons = []
+        soft_m_index = -1
+        for m in muons:
+            soft_m_index += 1
+            # pt cut
+            if m.pt < 5: continue
+            # eta cut
+            if abs(m.eta) > 2.4: continue
+        
+            self.histos[ 'softMu_looseId' ].Fill( m.looseId )
+            self.histos[ 'softMu_mediumId' ].Fill( m.mediumId )
+            self.histos[ 'softMu_softMvaId' ].Fill( m.softMvaId )
+
+            self.histos[ 'looseId_vs_mediumId' ].Fill( m.looseId , m.mediumId)
+            self.histos[ 'softMvaId_vs_mediumId' ].Fill( m.softMvaId , m.mediumId)
+
+            # id cut
+            if not m.mediumId: continue
+
+
+            if m.jetIdx in good_bjets_indices and soft_m_index not in good_muons_indices:
+                #print("soft reconstructed muon found !!")
+                #print("         whether identified as softMvaId? ",m.softMvaId)
+                #print("         , and pt: ",m.pt,"  , and eta: ",m.eta)
+
+                good_soft_muons.append(m)
+                self.histos[ 'softMu_associatedGenPartFlav' ].Fill( m.genPartFlav )
+
+        self.histos[ 'nGenSoftMus' ].Fill( nrSemiMuBs  )
+        self.histos[ 'nSoftMus' ].Fill( len(good_soft_muons) )
+
+        if nrSemiMuBs > 0:
+            self.nrSemiMuBDecays += 1
+        if len(good_soft_muons) > 0:
+            self.nrSoftRecMu += 1
 
         return True
 
