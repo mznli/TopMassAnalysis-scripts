@@ -1,0 +1,574 @@
+Loading SemiLepBDecayTagger from PhysicsTools.NanoAODTools.postprocessing.modules.SemiLepBDecayTagger_bambooSynch 
+Will write selected trees to checkUp_16March
+Pre-select 1320000 entries out of 1320000 (100.00%)
+Processed    10000/ 1320000 entries,  0.76% (elapsed time    46.1s, curr speed    0.217 kHz, avg speed    0.217 kHz), accepted    10001/   10001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 135960174L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 16.9375, eta: 0.431640625, phi: 2.9453125, and energy: 18.5399940098
+      +++ mother pdgId: -511, g-mother pdgId: -513, gg-mother pdgId: 5, ggg-mother pdgId: 5
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 1.11328125, eta: -0.84765625, phi: -0.955078125, and energy: 1.53776848059
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: 5, ggg-mother pdgId: 5
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 35.375, eta: -0.80859375, phi: 1.9921875, and energy: 47.5834992941
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  __________________________________________________________________________________________________________________________
+Processed    20000/ 1320000 entries,  1.52% (elapsed time   100.4s, curr speed    0.184 kHz, avg speed    0.199 kHz), accepted    20001/   20001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 202234685L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.3935546875, eta: -1.57421875, phi: 2.421875, and energy: 0.990604385489
+      +++ mother pdgId: -511, g-mother pdgId: -513, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 1.109375, eta: 0.11376953125, phi: -2.6640625, and energy: 1.11656234856
+      +++ mother pdgId: 511, g-mother pdgId: 513, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 63.375, eta: 0.3564453125, phi: -0.24560546875, and energy: 67.4438075103
+      +++ mother pdgId: 511, g-mother pdgId: 513, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  __________________________________________________________________________________________________________________________
+Processed    30000/ 1320000 entries,  2.27% (elapsed time   153.1s, curr speed    0.190 kHz, avg speed    0.196 kHz), accepted    30001/   30001 events (100.00%)
+Processed    40000/ 1320000 entries,  3.03% (elapsed time   204.4s, curr speed    0.195 kHz, avg speed    0.196 kHz), accepted    40001/   40001 events (100.00%)
+Processed    50000/ 1320000 entries,  3.79% (elapsed time   255.7s, curr speed    0.195 kHz, avg speed    0.196 kHz), accepted    50001/   50001 events (100.00%)
+Processed    60000/ 1320000 entries,  4.55% (elapsed time   311.1s, curr speed    0.180 kHz, avg speed    0.193 kHz), accepted    60001/   60001 events (100.00%)
+Processed    70000/ 1320000 entries,  5.30% (elapsed time   362.7s, curr speed    0.194 kHz, avg speed    0.193 kHz), accepted    70001/   70001 events (100.00%)
+Processed    80000/ 1320000 entries,  6.06% (elapsed time   415.9s, curr speed    0.188 kHz, avg speed    0.192 kHz), accepted    80001/   80001 events (100.00%)
+Processed    90000/ 1320000 entries,  6.82% (elapsed time   468.9s, curr speed    0.188 kHz, avg speed    0.192 kHz), accepted    90001/   90001 events (100.00%)
+Processed   100000/ 1320000 entries,  7.58% (elapsed time   519.2s, curr speed    0.199 kHz, avg speed    0.193 kHz), accepted   100001/  100001 events (100.00%)
+Processed   110000/ 1320000 entries,  8.33% (elapsed time   568.6s, curr speed    0.202 kHz, avg speed    0.193 kHz), accepted   110001/  110001 events (100.00%)
+Processed   120000/ 1320000 entries,  9.09% (elapsed time   624.5s, curr speed    0.179 kHz, avg speed    0.192 kHz), accepted   120001/  120001 events (100.00%)
+Processed   130000/ 1320000 entries,  9.85% (elapsed time   675.0s, curr speed    0.198 kHz, avg speed    0.193 kHz), accepted   130001/  130001 events (100.00%)
+Processed   140000/ 1320000 entries, 10.61% (elapsed time   727.3s, curr speed    0.191 kHz, avg speed    0.193 kHz), accepted   140001/  140001 events (100.00%)
+Processed   150000/ 1320000 entries, 11.36% (elapsed time   778.8s, curr speed    0.194 kHz, avg speed    0.193 kHz), accepted   150001/  150001 events (100.00%)
+Processed   160000/ 1320000 entries, 12.12% (elapsed time   828.7s, curr speed    0.201 kHz, avg speed    0.193 kHz), accepted   160001/  160001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 146206816L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 12.3125, eta: 0.074951171875, phi: -2.828125, and energy: 12.3471000243
+      +++ mother pdgId: 5122, g-mother pdgId: 5, gg-mother pdgId: 6, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.96484375, eta: 3.1484375, phi: 1.75390625, and energy: 11.2609565392
+      +++ mother pdgId: 511, g-mother pdgId: 513, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 57.875, eta: -1.7734375, phi: 0.541015625, and energy: 175.384909884
+      +++ mother pdgId: 511, g-mother pdgId: 513, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  __________________________________________________________________________________________________________________________
+Processed   170000/ 1320000 entries, 12.88% (elapsed time   883.2s, curr speed    0.183 kHz, avg speed    0.192 kHz), accepted   170001/  170001 events (100.00%)
+Processed   180000/ 1320000 entries, 13.64% (elapsed time   936.1s, curr speed    0.189 kHz, avg speed    0.192 kHz), accepted   180001/  180001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 218001477L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.705078125, eta: 0.8046875, phi: 2.9375, and energy: 0.945941733055
+      +++ mother pdgId: -531, g-mother pdgId: -5, gg-mother pdgId: -6, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 12.59375, eta: 0.1728515625, phi: 2.9375, and energy: 12.7823547956
+      +++ mother pdgId: 521, g-mother pdgId: -5, gg-mother pdgId: -6, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 11.0625, eta: 0.2880859375, phi: 2.453125, and energy: 11.5247415356
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: -5, ggg-mother pdgId: -5
+  
+  __________________________________________________________________________________________________________________________
+Processed   190000/ 1320000 entries, 14.39% (elapsed time   986.9s, curr speed    0.197 kHz, avg speed    0.193 kHz), accepted   190001/  190001 events (100.00%)
+Processed   200000/ 1320000 entries, 15.15% (elapsed time  1038.3s, curr speed    0.194 kHz, avg speed    0.193 kHz), accepted   200001/  200001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 153333137L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 1.8125, eta: 2.015625, phi: 1.3671875, and energy: 6.92253010164
+      +++ mother pdgId: -511, g-mother pdgId: -513, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.828125, eta: 0.8046875, phi: -3.125, and energy: 1.11102297733
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 13.65625, eta: 0.105224609375, phi: 0.81640625, and energy: 13.7319222744
+      +++ mother pdgId: -521, g-mother pdgId: -523, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  __________________________________________________________________________________________________________________________
+Processed   210000/ 1320000 entries, 15.91% (elapsed time  1088.9s, curr speed    0.198 kHz, avg speed    0.193 kHz), accepted   210001/  210001 events (100.00%)
+Processed   220000/ 1320000 entries, 16.67% (elapsed time  1138.7s, curr speed    0.201 kHz, avg speed    0.193 kHz), accepted   220001/  220001 events (100.00%)
+Processed   230000/ 1320000 entries, 17.42% (elapsed time  1194.8s, curr speed    0.178 kHz, avg speed    0.193 kHz), accepted   230001/  230001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 204591188L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 5.96875, eta: 0.74609375, phi: 1.73828125, and energy: 7.70852709601
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 17.3125, eta: 0.763671875, phi: -2.7265625, and energy: 22.6109430085
+      +++ mother pdgId: -511, g-mother pdgId: -513, gg-mother pdgId: 5, ggg-mother pdgId: 5
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 3.0859375, eta: 1.5234375, phi: 1.26953125, and energy: 7.41540076043
+      +++ mother pdgId: 511, g-mother pdgId: 513, gg-mother pdgId: 5, ggg-mother pdgId: 5
+  
+  __________________________________________________________________________________________________________________________
+Processed   240000/ 1320000 entries, 18.18% (elapsed time  1246.1s, curr speed    0.195 kHz, avg speed    0.193 kHz), accepted   240001/  240001 events (100.00%)
+Processed   250000/ 1320000 entries, 18.94% (elapsed time  1297.7s, curr speed    0.194 kHz, avg speed    0.193 kHz), accepted   250001/  250001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 204292929L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 42.375, eta: -0.4853515625, phi: -0.56640625, and energy: 47.4648071687
+      +++ mother pdgId: -531, g-mother pdgId: 5, gg-mother pdgId: 6, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 20.5625, eta: 0.734375, phi: -1.1953125, and energy: 26.3609627316
+      +++ mother pdgId: 511, g-mother pdgId: 5, gg-mother pdgId: 6, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 10.0, eta: 0.113525390625, phi: -2.375, and energy: 10.06450931
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  __________________________________________________________________________________________________________________________
+Processed   260000/ 1320000 entries, 19.70% (elapsed time  1347.0s, curr speed    0.203 kHz, avg speed    0.193 kHz), accepted   260001/  260001 events (100.00%)
+Processed   270000/ 1320000 entries, 20.45% (elapsed time  1399.1s, curr speed    0.192 kHz, avg speed    0.193 kHz), accepted   270001/  270001 events (100.00%)
+Processed   280000/ 1320000 entries, 21.21% (elapsed time  1452.0s, curr speed    0.189 kHz, avg speed    0.193 kHz), accepted   280001/  280001 events (100.00%)
+Processed   290000/ 1320000 entries, 21.97% (elapsed time  1505.7s, curr speed    0.186 kHz, avg speed    0.193 kHz), accepted   290001/  290001 events (100.00%)
+Processed   300000/ 1320000 entries, 22.73% (elapsed time  1556.3s, curr speed    0.198 kHz, avg speed    0.193 kHz), accepted   300001/  300001 events (100.00%)
+Processed   310000/ 1320000 entries, 23.48% (elapsed time  1607.1s, curr speed    0.197 kHz, avg speed    0.193 kHz), accepted   310001/  310001 events (100.00%)
+Processed   320000/ 1320000 entries, 24.24% (elapsed time  1659.6s, curr speed    0.190 kHz, avg speed    0.193 kHz), accepted   320001/  320001 events (100.00%)
+Processed   330000/ 1320000 entries, 25.00% (elapsed time  1710.8s, curr speed    0.195 kHz, avg speed    0.193 kHz), accepted   330001/  330001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 162678072L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 26.125, eta: -0.4033203125, phi: 3.109375, and energy: 28.2788014185
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 5.8125, eta: -0.498046875, phi: -2.9453125, and energy: 6.54842266558
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: -5, ggg-mother pdgId: -5
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 13.34375, eta: 0.22705078125, phi: 1.30859375, and energy: 13.6891790296
+      +++ mother pdgId: -511, g-mother pdgId: -513, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  __________________________________________________________________________________________________________________________
+Processed   340000/ 1320000 entries, 25.76% (elapsed time  1765.0s, curr speed    0.185 kHz, avg speed    0.193 kHz), accepted   340001/  340001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 204666420L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 12.5625, eta: -1.03515625, phi: -2.3046875, and energy: 19.9160662283
+      +++ mother pdgId: 5132, g-mother pdgId: 5, gg-mother pdgId: 6, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.7109375, eta: -1.359375, phi: 1.046875, and energy: 1.47540154903
+      +++ mother pdgId: 511, g-mother pdgId: 5, gg-mother pdgId: 6, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 12.90625, eta: 1.1328125, phi: 2.9921875, and energy: 22.1116411428
+      +++ mother pdgId: 511, g-mother pdgId: -5, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  __________________________________________________________________________________________________________________________
+Processed   350000/ 1320000 entries, 26.52% (elapsed time  1817.8s, curr speed    0.189 kHz, avg speed    0.193 kHz), accepted   350001/  350001 events (100.00%)
+Processed   360000/ 1320000 entries, 27.27% (elapsed time  1867.7s, curr speed    0.200 kHz, avg speed    0.193 kHz), accepted   360001/  360001 events (100.00%)
+Processed   370000/ 1320000 entries, 28.03% (elapsed time  1918.1s, curr speed    0.199 kHz, avg speed    0.193 kHz), accepted   370001/  370001 events (100.00%)
+Processed   380000/ 1320000 entries, 28.79% (elapsed time  1970.8s, curr speed    0.189 kHz, avg speed    0.193 kHz), accepted   380001/  380001 events (100.00%)
+Processed   390000/ 1320000 entries, 29.55% (elapsed time  2025.8s, curr speed    0.182 kHz, avg speed    0.193 kHz), accepted   390001/  390001 events (100.00%)
+Processed   400000/ 1320000 entries, 30.30% (elapsed time  2079.9s, curr speed    0.185 kHz, avg speed    0.192 kHz), accepted   400001/  400001 events (100.00%)
+Processed   410000/ 1320000 entries, 31.06% (elapsed time  2131.9s, curr speed    0.192 kHz, avg speed    0.192 kHz), accepted   410001/  410001 events (100.00%)
+Processed   420000/ 1320000 entries, 31.82% (elapsed time  2184.5s, curr speed    0.190 kHz, avg speed    0.192 kHz), accepted   420001/  420001 events (100.00%)
+Processed   430000/ 1320000 entries, 32.58% (elapsed time  2235.3s, curr speed    0.197 kHz, avg speed    0.192 kHz), accepted   430001/  430001 events (100.00%)
+Processed   440000/ 1320000 entries, 33.33% (elapsed time  2286.4s, curr speed    0.196 kHz, avg speed    0.192 kHz), accepted   440001/  440001 events (100.00%)
+Processed   450000/ 1320000 entries, 34.09% (elapsed time  2340.9s, curr speed    0.184 kHz, avg speed    0.192 kHz), accepted   450001/  450001 events (100.00%)
+Processed   460000/ 1320000 entries, 34.85% (elapsed time  2391.3s, curr speed    0.198 kHz, avg speed    0.192 kHz), accepted   460001/  460001 events (100.00%)
+Processed   470000/ 1320000 entries, 35.61% (elapsed time  2441.9s, curr speed    0.198 kHz, avg speed    0.192 kHz), accepted   470001/  470001 events (100.00%)
+Processed   480000/ 1320000 entries, 36.36% (elapsed time  2494.6s, curr speed    0.190 kHz, avg speed    0.192 kHz), accepted   480001/  480001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 4, ' and evt: ', 226231119L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 19.5625, eta: -0.955078125, phi: 2.0625, and energy: 29.1838822596
+      +++ mother pdgId: 521, g-mother pdgId: -5, gg-mother pdgId: -6, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 21.8125, eta: 0.3974609375, phi: -0.517578125, and energy: 23.5582182778
+      +++ mother pdgId: -511, g-mother pdgId: 5, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.38671875, eta: 0.4482421875, phi: 1.984375, and energy: 0.426223573936
+      +++ mother pdgId: -521, g-mother pdgId: -523, gg-mother pdgId: -6, ggg-mother pdgId: 21
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.560546875, eta: 0.51953125, phi: -1.91796875, and energy: 0.637913184392
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: -6, ggg-mother pdgId: 21
+  
+  __________________________________________________________________________________________________________________________
+Processed   490000/ 1320000 entries, 37.12% (elapsed time  2544.0s, curr speed    0.202 kHz, avg speed    0.193 kHz), accepted   490001/  490001 events (100.00%)
+Processed   500000/ 1320000 entries, 37.88% (elapsed time  2599.6s, curr speed    0.180 kHz, avg speed    0.192 kHz), accepted   500001/  500001 events (100.00%)
+Processed   510000/ 1320000 entries, 38.64% (elapsed time  2650.4s, curr speed    0.197 kHz, avg speed    0.192 kHz), accepted   510001/  510001 events (100.00%)
+Processed   520000/ 1320000 entries, 39.39% (elapsed time  2701.1s, curr speed    0.197 kHz, avg speed    0.193 kHz), accepted   520001/  520001 events (100.00%)
+Processed   530000/ 1320000 entries, 40.15% (elapsed time  2751.6s, curr speed    0.198 kHz, avg speed    0.193 kHz), accepted   530001/  530001 events (100.00%)
+Processed   540000/ 1320000 entries, 40.91% (elapsed time  2805.2s, curr speed    0.186 kHz, avg speed    0.192 kHz), accepted   540001/  540001 events (100.00%)
+Processed   550000/ 1320000 entries, 41.67% (elapsed time  2857.8s, curr speed    0.190 kHz, avg speed    0.192 kHz), accepted   550001/  550001 events (100.00%)
+Processed   560000/ 1320000 entries, 42.42% (elapsed time  2909.9s, curr speed    0.192 kHz, avg speed    0.192 kHz), accepted   560001/  560001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 203522971L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 2.3515625, eta: 0.583984375, phi: -2.0546875, and energy: 2.76407457346
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 7.703125, eta: 1.6015625, phi: 2.96875, and energy: 19.8831479042
+      +++ mother pdgId: -521, g-mother pdgId: -523, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 6.53125, eta: -1.61328125, phi: 2.359375, and energy: 17.0416198819
+      +++ mother pdgId: -521, g-mother pdgId: -523, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  __________________________________________________________________________________________________________________________
+Processed   570000/ 1320000 entries, 43.18% (elapsed time  2962.5s, curr speed    0.190 kHz, avg speed    0.192 kHz), accepted   570001/  570001 events (100.00%)
+Processed   580000/ 1320000 entries, 43.94% (elapsed time  3013.7s, curr speed    0.195 kHz, avg speed    0.192 kHz), accepted   580001/  580001 events (100.00%)
+Processed   590000/ 1320000 entries, 44.70% (elapsed time  3066.0s, curr speed    0.191 kHz, avg speed    0.192 kHz), accepted   590001/  590001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 328314175L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 9.46875, eta: -1.48828125, phi: -2.4453125, and energy: 22.0396336903
+      +++ mother pdgId: -521, g-mother pdgId: -523, gg-mother pdgId: 5, ggg-mother pdgId: 5
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 3.8828125, eta: -1.09765625, phi: -1.28515625, and energy: 6.4664076315
+      +++ mother pdgId: 511, g-mother pdgId: 513, gg-mother pdgId: 5, ggg-mother pdgId: 5
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 13.71875, eta: -1.37109375, phi: 0.54296875, and energy: 28.7646966123
+      +++ mother pdgId: 511, g-mother pdgId: 513, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  __________________________________________________________________________________________________________________________
+Processed   600000/ 1320000 entries, 45.45% (elapsed time  3116.9s, curr speed    0.197 kHz, avg speed    0.193 kHz), accepted   600001/  600001 events (100.00%)
+Processed   610000/ 1320000 entries, 46.21% (elapsed time  3172.0s, curr speed    0.181 kHz, avg speed    0.192 kHz), accepted   610001/  610001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 195439718L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 6.53125, eta: 0.17138671875, phi: 3.0625, and energy: 6.62740756107
+      +++ mother pdgId: 511, g-mother pdgId: -5, gg-mother pdgId: -6, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 3.171875, eta: 0.1044921875, phi: 3.0, and energy: 3.18920700607
+      +++ mother pdgId: -511, g-mother pdgId: -513, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 8.625, eta: -0.556640625, phi: -1.265625, and energy: 9.99608346812
+      +++ mother pdgId: -511, g-mother pdgId: -513, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  __________________________________________________________________________________________________________________________
+Processed   620000/ 1320000 entries, 46.97% (elapsed time  3222.1s, curr speed    0.200 kHz, avg speed    0.192 kHz), accepted   620001/  620001 events (100.00%)
+Processed   630000/ 1320000 entries, 47.73% (elapsed time  3273.9s, curr speed    0.193 kHz, avg speed    0.192 kHz), accepted   630001/  630001 events (100.00%)
+Processed   640000/ 1320000 entries, 48.48% (elapsed time  3326.0s, curr speed    0.192 kHz, avg speed    0.192 kHz), accepted   640001/  640001 events (100.00%)
+Processed   650000/ 1320000 entries, 49.24% (elapsed time  3377.0s, curr speed    0.196 kHz, avg speed    0.192 kHz), accepted   650001/  650001 events (100.00%)
+Processed   660000/ 1320000 entries, 50.00% (elapsed time  3427.8s, curr speed    0.197 kHz, avg speed    0.193 kHz), accepted   660001/  660001 events (100.00%)
+Processed   670000/ 1320000 entries, 50.76% (elapsed time  3481.0s, curr speed    0.188 kHz, avg speed    0.192 kHz), accepted   670001/  670001 events (100.00%)
+Processed   680000/ 1320000 entries, 51.52% (elapsed time  3531.3s, curr speed    0.199 kHz, avg speed    0.193 kHz), accepted   680001/  680001 events (100.00%)
+Processed   690000/ 1320000 entries, 52.27% (elapsed time  3583.3s, curr speed    0.193 kHz, avg speed    0.193 kHz), accepted   690001/  690001 events (100.00%)
+Processed   700000/ 1320000 entries, 53.03% (elapsed time  3634.2s, curr speed    0.196 kHz, avg speed    0.193 kHz), accepted   700001/  700001 events (100.00%)
+Processed   710000/ 1320000 entries, 53.79% (elapsed time  3684.9s, curr speed    0.198 kHz, avg speed    0.193 kHz), accepted   710001/  710001 events (100.00%)
+Processed   720000/ 1320000 entries, 54.55% (elapsed time  3737.3s, curr speed    0.191 kHz, avg speed    0.193 kHz), accepted   720001/  720001 events (100.00%)
+Processed   730000/ 1320000 entries, 55.30% (elapsed time  3790.0s, curr speed    0.190 kHz, avg speed    0.193 kHz), accepted   730001/  730001 events (100.00%)
+Processed   740000/ 1320000 entries, 56.06% (elapsed time  3840.3s, curr speed    0.199 kHz, avg speed    0.193 kHz), accepted   740001/  740001 events (100.00%)
+Processed   750000/ 1320000 entries, 56.82% (elapsed time  3891.8s, curr speed    0.194 kHz, avg speed    0.193 kHz), accepted   750001/  750001 events (100.00%)
+Processed   760000/ 1320000 entries, 57.58% (elapsed time  3942.4s, curr speed    0.197 kHz, avg speed    0.193 kHz), accepted   760001/  760001 events (100.00%)
+Processed   770000/ 1320000 entries, 58.33% (elapsed time  3991.6s, curr speed    0.204 kHz, avg speed    0.193 kHz), accepted   770001/  770001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 203276354L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 9.71875, eta: 0.703125, phi: -3.0625, and energy: 12.2217723916
+      +++ mother pdgId: -511, g-mother pdgId: 5, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 7.421875, eta: -0.212890625, phi: 0.130859375, and energy: 7.59069984818
+      +++ mother pdgId: 5122, g-mother pdgId: 5212, gg-mother pdgId: 5, ggg-mother pdgId: 5
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 19.0, eta: -0.09521484375, phi: -0.525390625, and energy: 19.0861908182
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: 5, ggg-mother pdgId: 5
+  
+  __________________________________________________________________________________________________________________________
+Processed   780000/ 1320000 entries, 59.09% (elapsed time  4046.7s, curr speed    0.182 kHz, avg speed    0.193 kHz), accepted   780001/  780001 events (100.00%)
+Processed   790000/ 1320000 entries, 59.85% (elapsed time  4097.9s, curr speed    0.195 kHz, avg speed    0.193 kHz), accepted   790001/  790001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 203899487L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 2.734375, eta: -0.828125, phi: -1.78515625, and energy: 3.72680333872
+      +++ mother pdgId: 531, g-mother pdgId: -5, gg-mother pdgId: -6, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 31.25, eta: -1.30078125, phi: -2.9375, and energy: 61.632552913
+      +++ mother pdgId: -521, g-mother pdgId: -523, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 6.4375, eta: -1.140625, phi: -3.0546875, and energy: 11.0993521116
+      +++ mother pdgId: 531, g-mother pdgId: 533, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  __________________________________________________________________________________________________________________________
+Processed   800000/ 1320000 entries, 60.61% (elapsed time  4149.1s, curr speed    0.195 kHz, avg speed    0.193 kHz), accepted   800001/  800001 events (100.00%)
+Processed   810000/ 1320000 entries, 61.36% (elapsed time  4199.2s, curr speed    0.200 kHz, avg speed    0.193 kHz), accepted   810001/  810001 events (100.00%)
+Processed   820000/ 1320000 entries, 62.12% (elapsed time  4250.0s, curr speed    0.197 kHz, avg speed    0.193 kHz), accepted   820001/  820001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 279454275L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 4.96875, eta: -2.5859375, phi: 2.015625, and energy: 33.1690264776
+      +++ mother pdgId: 511, g-mother pdgId: 513, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 5.09375, eta: -4.109375, phi: -2.2734375, and energy: 155.168501503
+      +++ mother pdgId: -521, g-mother pdgId: -523, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 2.2578125, eta: -2.140625, phi: 2.671875, and energy: 9.73380535309
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  __________________________________________________________________________________________________________________________
+Processed   830000/ 1320000 entries, 62.88% (elapsed time  4302.2s, curr speed    0.191 kHz, avg speed    0.193 kHz), accepted   830001/  830001 events (100.00%)
+Processed   840000/ 1320000 entries, 63.64% (elapsed time  4355.0s, curr speed    0.190 kHz, avg speed    0.193 kHz), accepted   840001/  840001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 211682362L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 14.8125, eta: -2.078125, phi: -0.73828125, and energy: 60.0990471137
+      +++ mother pdgId: -521, g-mother pdgId: 5, gg-mother pdgId: 6, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 23.5625, eta: -2.0546875, phi: -0.744140625, and energy: 93.4551365906
+      +++ mother pdgId: -521, g-mother pdgId: 5, gg-mother pdgId: 6, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 8.15625, eta: -0.8046875, phi: 1.8046875, and energy: 10.9425281918
+      +++ mother pdgId: 511, g-mother pdgId: 513, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  __________________________________________________________________________________________________________________________
+Processed   850000/ 1320000 entries, 64.39% (elapsed time  4406.1s, curr speed    0.195 kHz, avg speed    0.193 kHz), accepted   850001/  850001 events (100.00%)
+Processed   860000/ 1320000 entries, 65.15% (elapsed time  4456.4s, curr speed    0.199 kHz, avg speed    0.193 kHz), accepted   860001/  860001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 204454128L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 35.5, eta: 0.0335693359375, phi: -1.40625, and energy: 35.5200043591
+      +++ mother pdgId: -521, g-mother pdgId: 5, gg-mother pdgId: 6, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 2.5, eta: 0.3046875, phi: 1.35546875, and energy: 2.61694360671
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 1.5859375, eta: -3.828125, phi: 2.875, and energy: 36.4749783491
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  __________________________________________________________________________________________________________________________
+Processed   870000/ 1320000 entries, 65.91% (elapsed time  4506.7s, curr speed    0.199 kHz, avg speed    0.193 kHz), accepted   870001/  870001 events (100.00%)
+Processed   880000/ 1320000 entries, 66.67% (elapsed time  4557.6s, curr speed    0.197 kHz, avg speed    0.193 kHz), accepted   880001/  880001 events (100.00%)
+Processed   890000/ 1320000 entries, 67.42% (elapsed time  4611.0s, curr speed    0.187 kHz, avg speed    0.193 kHz), accepted   890001/  890001 events (100.00%)
+Processed   900000/ 1320000 entries, 68.18% (elapsed time  4662.2s, curr speed    0.195 kHz, avg speed    0.193 kHz), accepted   900001/  900001 events (100.00%)
+Processed   910000/ 1320000 entries, 68.94% (elapsed time  4714.9s, curr speed    0.190 kHz, avg speed    0.193 kHz), accepted   910001/  910001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 205170046L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 4.90625, eta: 0.537109375, phi: -3.0234375, and energy: 5.63112117887
+      +++ mother pdgId: 521, g-mother pdgId: -5, gg-mother pdgId: -6, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.966796875, eta: 1.875, phi: -2.4609375, and energy: 3.22628532534
+      +++ mother pdgId: -521, g-mother pdgId: 5, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 11.15625, eta: -1.88671875, phi: -0.658203125, and energy: 37.6481757752
+      +++ mother pdgId: 511, g-mother pdgId: 513, gg-mother pdgId: 5, ggg-mother pdgId: 5
+  
+  __________________________________________________________________________________________________________________________
+Processed   920000/ 1320000 entries, 69.70% (elapsed time  4763.8s, curr speed    0.204 kHz, avg speed    0.193 kHz), accepted   920001/  920001 events (100.00%)
+Processed   930000/ 1320000 entries, 70.45% (elapsed time  4815.1s, curr speed    0.195 kHz, avg speed    0.193 kHz), accepted   930001/  930001 events (100.00%)
+Processed   940000/ 1320000 entries, 71.21% (elapsed time  4869.0s, curr speed    0.185 kHz, avg speed    0.193 kHz), accepted   940001/  940001 events (100.00%)
+Processed   950000/ 1320000 entries, 71.97% (elapsed time  4921.5s, curr speed    0.190 kHz, avg speed    0.193 kHz), accepted   950001/  950001 events (100.00%)
+Processed   960000/ 1320000 entries, 72.73% (elapsed time  4971.3s, curr speed    0.201 kHz, avg speed    0.193 kHz), accepted   960001/  960001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 204787301L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.4521484375, eta: 3.9453125, phi: 1.65234375, and energy: 11.6907126212
+      +++ mother pdgId: 5122, g-mother pdgId: -5, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 15.90625, eta: 0.0947265625, phi: -1.69921875, and energy: 15.9776677375
+      +++ mother pdgId: 521, g-mother pdgId: -5, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 30.5, eta: -0.353515625, phi: -2.3671875, and energy: 32.4257739374
+      +++ mother pdgId: -521, g-mother pdgId: -523, gg-mother pdgId: 5, ggg-mother pdgId: 5
+  
+  __________________________________________________________________________________________________________________________
+Processed   970000/ 1320000 entries, 73.48% (elapsed time  5022.2s, curr speed    0.196 kHz, avg speed    0.193 kHz), accepted   970001/  970001 events (100.00%)
+Processed   980000/ 1320000 entries, 74.24% (elapsed time  5072.4s, curr speed    0.199 kHz, avg speed    0.193 kHz), accepted   980001/  980001 events (100.00%)
+Processed   990000/ 1320000 entries, 75.00% (elapsed time  5123.1s, curr speed    0.197 kHz, avg speed    0.193 kHz), accepted   990001/  990001 events (100.00%)
+Processed  1000000/ 1320000 entries, 75.76% (elapsed time  5176.5s, curr speed    0.188 kHz, avg speed    0.193 kHz), accepted  1000001/ 1000001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 4, ' and evt: ', 204861100L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 5.734375, eta: 0.3212890625, phi: 0.7734375, and energy: 6.03289997197
+      +++ mother pdgId: 521, g-mother pdgId: -5, gg-mother pdgId: -6, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 9.65625, eta: 1.125, phi: 0.0433349609375, and energy: 16.4391346676
+      +++ mother pdgId: -521, g-mother pdgId: -523, gg-mother pdgId: 5, ggg-mother pdgId: 5
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 1.29296875, eta: 0.2392578125, phi: -0.3330078125, and energy: 1.33015317252
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: 5, ggg-mother pdgId: 5
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.833984375, eta: -0.73828125, phi: 3.125, and energy: 1.07178287653
+      +++ mother pdgId: -511, g-mother pdgId: -513, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  __________________________________________________________________________________________________________________________
+Processed  1010000/ 1320000 entries, 76.52% (elapsed time  5229.4s, curr speed    0.189 kHz, avg speed    0.193 kHz), accepted  1010001/ 1010001 events (100.00%)
+Processed  1020000/ 1320000 entries, 77.27% (elapsed time  5278.7s, curr speed    0.203 kHz, avg speed    0.193 kHz), accepted  1020001/ 1020001 events (100.00%)
+Processed  1030000/ 1320000 entries, 78.03% (elapsed time  5330.5s, curr speed    0.193 kHz, avg speed    0.193 kHz), accepted  1030001/ 1030001 events (100.00%)
+Processed  1040000/ 1320000 entries, 78.79% (elapsed time  5378.9s, curr speed    0.207 kHz, avg speed    0.193 kHz), accepted  1040001/ 1040001 events (100.00%)
+Processed  1050000/ 1320000 entries, 79.55% (elapsed time  5434.7s, curr speed    0.179 kHz, avg speed    0.193 kHz), accepted  1050001/ 1050001 events (100.00%)
+Processed  1060000/ 1320000 entries, 80.30% (elapsed time  5485.3s, curr speed    0.198 kHz, avg speed    0.193 kHz), accepted  1060001/ 1060001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 374480315L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.48046875, eta: 6.296875, phi: -1.72265625, and energy: 130.417145335
+      +++ mother pdgId: -511, g-mother pdgId: -513, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 10.8125, eta: 1.56640625, phi: -0.072509765625, and energy: 27.0215160117
+      +++ mother pdgId: 511, g-mother pdgId: 513, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 10.4375, eta: 1.23046875, phi: 1.21484375, and energy: 19.387599946
+      +++ mother pdgId: -511, g-mother pdgId: -513, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  __________________________________________________________________________________________________________________________
+Processed  1070000/ 1320000 entries, 81.06% (elapsed time  5540.6s, curr speed    0.181 kHz, avg speed    0.193 kHz), accepted  1070001/ 1070001 events (100.00%)
+Processed  1080000/ 1320000 entries, 81.82% (elapsed time  5590.4s, curr speed    0.201 kHz, avg speed    0.193 kHz), accepted  1080001/ 1080001 events (100.00%)
+Processed  1090000/ 1320000 entries, 82.58% (elapsed time  5642.2s, curr speed    0.193 kHz, avg speed    0.193 kHz), accepted  1090001/ 1090001 events (100.00%)
+Processed  1100000/ 1320000 entries, 83.33% (elapsed time  5695.0s, curr speed    0.189 kHz, avg speed    0.193 kHz), accepted  1100001/ 1100001 events (100.00%)
+Processed  1110000/ 1320000 entries, 84.09% (elapsed time  5747.7s, curr speed    0.190 kHz, avg speed    0.193 kHz), accepted  1110001/ 1110001 events (100.00%)
+Processed  1120000/ 1320000 entries, 84.85% (elapsed time  5801.3s, curr speed    0.187 kHz, avg speed    0.193 kHz), accepted  1120001/ 1120001 events (100.00%)
+Processed  1130000/ 1320000 entries, 85.61% (elapsed time  5852.6s, curr speed    0.195 kHz, avg speed    0.193 kHz), accepted  1130001/ 1130001 events (100.00%)
+Processed  1140000/ 1320000 entries, 86.36% (elapsed time  5903.5s, curr speed    0.197 kHz, avg speed    0.193 kHz), accepted  1140001/ 1140001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 228339933L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.283203125, eta: 2.7109375, phi: 2.375, and energy: 2.13957787709
+      +++ mother pdgId: 511, g-mother pdgId: 513, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.24267578125, eta: 2.9140625, phi: -3.1171875, and energy: 2.2430255053
+      +++ mother pdgId: -521, g-mother pdgId: -523, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 20.625, eta: 2.203125, phi: 1.22265625, and energy: 94.5008441331
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: -5, ggg-mother pdgId: -5
+  
+  __________________________________________________________________________________________________________________________
+Processed  1150000/ 1320000 entries, 87.12% (elapsed time  5954.2s, curr speed    0.197 kHz, avg speed    0.193 kHz), accepted  1150001/ 1150001 events (100.00%)
+Processed  1160000/ 1320000 entries, 87.88% (elapsed time  6009.0s, curr speed    0.183 kHz, avg speed    0.193 kHz), accepted  1160001/ 1160001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 215202841L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 1.140625, eta: 0.451171875, phi: 0.19482421875, and energy: 1.25869822118
+      +++ mother pdgId: -511, g-mother pdgId: 5, gg-mother pdgId: 6, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 12.84375, eta: 0.3134765625, phi: -2.484375, and energy: 13.4799966564
+      +++ mother pdgId: 511, g-mother pdgId: -5, gg-mother pdgId: -6, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 2.2734375, eta: 0.248046875, phi: -2.4765625, and energy: 2.3437360146
+      +++ mother pdgId: 511, g-mother pdgId: -5, gg-mother pdgId: -6, ggg-mother pdgId: -6
+  
+  __________________________________________________________________________________________________________________________
+Processed  1170000/ 1320000 entries, 88.64% (elapsed time  6059.1s, curr speed    0.200 kHz, avg speed    0.193 kHz), accepted  1170001/ 1170001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 231622958L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 16.1875, eta: 1.36328125, phi: -1.5078125, and energy: 33.7090011294
+      +++ mother pdgId: -511, g-mother pdgId: -513, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 12.9375, eta: 1.2578125, phi: -2.96875, and energy: 24.5941438709
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 7.015625, eta: 1.7109375, phi: 0.791015625, and energy: 20.0465998854
+      +++ mother pdgId: 511, g-mother pdgId: 513, gg-mother pdgId: 5, ggg-mother pdgId: 6
+  
+  __________________________________________________________________________________________________________________________
+Processed  1180000/ 1320000 entries, 89.39% (elapsed time  6110.8s, curr speed    0.194 kHz, avg speed    0.193 kHz), accepted  1180001/ 1180001 events (100.00%)
+Processed  1190000/ 1320000 entries, 90.15% (elapsed time  6161.6s, curr speed    0.197 kHz, avg speed    0.193 kHz), accepted  1190001/ 1190001 events (100.00%)
+Processed  1200000/ 1320000 entries, 90.91% (elapsed time  6212.3s, curr speed    0.197 kHz, avg speed    0.193 kHz), accepted  1200001/ 1200001 events (100.00%)
+Processed  1210000/ 1320000 entries, 91.67% (elapsed time  6263.6s, curr speed    0.195 kHz, avg speed    0.193 kHz), accepted  1210001/ 1210001 events (100.00%)
+Processed  1220000/ 1320000 entries, 92.42% (elapsed time  6317.6s, curr speed    0.185 kHz, avg speed    0.193 kHz), accepted  1220001/ 1220001 events (100.00%)
+Processed  1230000/ 1320000 entries, 93.18% (elapsed time  6367.8s, curr speed    0.199 kHz, avg speed    0.193 kHz), accepted  1230001/ 1230001 events (100.00%)
+('\n\n************* >=3 nrSemiMuBs found! , nrSemiMuBs: ', 3, ' and evt: ', 215751757L)
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 0.779296875, eta: -0.513671875, phi: -0.568359375, and energy: 0.884389677248
+      +++ mother pdgId: -521, g-mother pdgId: -523, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon from BHadron decay is found   
+      +++ pt: 2.5859375, eta: 0.923828125, phi: -2.5859375, and energy: 3.77018187016
+      +++ mother pdgId: 521, g-mother pdgId: 523, gg-mother pdgId: -5, ggg-mother pdgId: -6
+  
+  
++++++++++++++++++++++++++++++ A muon fr
