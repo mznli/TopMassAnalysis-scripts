@@ -648,40 +648,12 @@ class MinimalTopMass(NanoAODHistoModule):
             help="Backend to use, 'dataframe' (default), 'lazy', or 'compiled'")
     def prepareTree(self, tree, sample=None, sampleCfg=None, backend=None):
         from bamboo.treedecorators import NanoAODDescription
-        return super().prepareTree(
-            tree, sample=sample, sampleCfg=sampleCfg,
-            description=NanoAODDescription.get(
-                "v5", year="2016", isMC=self.isMC(sample)), backend=self.args.backend)
 
-    def definePlots(self, t, noSel, sample=None, sampleCfg=None):
-        from bamboo.plots import Plot
-        from bamboo.plots import CutFlowReport, SummedPlot, Skim
-        from bamboo.plots import EquidistantBinning as EqB
-        
+        tree, noSel, be, lumiArgs = super().prepareTree(
+                tree, sample=sample, sampleCfg=sampleCfg,
+                description=NanoAODDescription.get(
+                "v9", year="2016", isMC=self.isMC(sample)), backend=self.args.backend)            
 
-        era = sampleCfg.get("era") if sampleCfg else None
-        ## also need to take into account TTbar reweighting and pre-firing rates
-        # https://gitlab.cern.ch/gsaha/hhbbww_sl/-/blob/master/BaseHHtobbWW.py?ref_type=heads#L462
-        # https://gitlab.cern.ch/gsaha/hhbbww_sl/-/blob/master/BaseHHtobbWW.py?ref_type=heads#L481
-        ##noSel = noSel.refine("trig", cut=op.OR(t.HLT.HIL3DoubleMu0, t.HLT.HIEle20_Ele12_CaloIdL_TrackIdL_IsoVL_DZ))
-
-        plots = []
-
-        cfr = CutFlowReport("yields", recursive=True)
-        plots.append(cfr)
-        cfr.add(noSel, "Initial")
-
-        if self.isMC(sample):
-            noSel = noSel.refine("mcWeight", weight=t.genWeight, autoSyst=True)
-        # MET filter #
-        noSel = noSel.refine("passMETFlags", cut=METFilter(t.Flag, era, self.isMC(sample)) )
-        
-        psISRSyst = op.systematic(op.c_float(1.), name="psISR", up=t.PSWeight[0], down=t.PSWeight[2])
-        noSel = noSel.refine("psISR", weight=psISRSyst)
-        mcWgts = []
-        mcWgts += [op.systematic(op.c_float(1.), **{f"qcdScale{i:d}": t.LHEScaleWeight[i] for i in (0, 1, 3, 5, 7, 8)}),]
-        noSel = noSel.refine("muFmuRScaleWeight", weight=mcWgts)
-        
 #       if self.isMC(sample):
 #            if self.doJES =="merged":
 #                jesUncertaintySources = ['Regrouped_Absolute', f'Regrouped_Absolute_{era_}',
@@ -721,13 +693,13 @@ class MinimalTopMass(NanoAODHistoModule):
 #                    }
 #
         cmJMEArgs = {
-                "jsonFile": localizePOGSF(era, "JME", "jet_jerc.json.gz"),
+                "jsonFile": localizePOGSF("2018UL", "JME", "jet_jerc.json.gz"),
                 "jsonFileSmearingTool": os.path.join("/cvmfs/cms.cern.ch/rsync/cms-nanoAOD/jsonpog-integration", "POG", "JME", "jer_smear.json.gz"),
-                "jec": JECs[era],
-                "smear": JERs[era],
+                "jec": JECs["2018UL"],
+                "smear": JERs["2018UL"],
                 #"splitJER": False,
                 "jesUncertaintySources": jesUncertaintySources,
-                "addHEM2018Issue": (era == "2018"),
+                #"addHEM2018Issue": (era == "2018"),
                 "isMC": self.isMC(sample),
                 "backend": self.args.backend,
                 #"jecLevels":[], #  default : L1FastJet, L2Relative, L3Absolute, and also L2L3Residual for data
@@ -735,8 +707,38 @@ class MinimalTopMass(NanoAODHistoModule):
 
         # configure corrections and variations
         from bamboo.analysisutils import configureJets
-        configureJets(t.Jet, jetType="AK4PFchs", **cmJMEArgs)
+        configureJets(tree._Jet, jetType="AK4PFchs", **cmJMEArgs)
+        return tree, noSel, be, lumiArgs
 
+    def definePlots(self, t, noSel, sample=None, sampleCfg=None):
+        from bamboo.plots import Plot
+        from bamboo.plots import CutFlowReport, SummedPlot, Skim
+        from bamboo.plots import EquidistantBinning as EqB
+        
+
+        era = sampleCfg.get("era") if sampleCfg else None
+        ## also need to take into account TTbar reweighting and pre-firing rates
+        # https://gitlab.cern.ch/gsaha/hhbbww_sl/-/blob/master/BaseHHtobbWW.py?ref_type=heads#L462
+        # https://gitlab.cern.ch/gsaha/hhbbww_sl/-/blob/master/BaseHHtobbWW.py?ref_type=heads#L481
+        ##noSel = noSel.refine("trig", cut=op.OR(t.HLT.HIL3DoubleMu0, t.HLT.HIEle20_Ele12_CaloIdL_TrackIdL_IsoVL_DZ))
+
+        plots = []
+
+        cfr = CutFlowReport("yields", recursive=True)
+        plots.append(cfr)
+        cfr.add(noSel, "Initial")
+
+        if self.isMC(sample):
+            noSel = noSel.refine("mcWeight", weight=t.genWeight, autoSyst=True)
+        # MET filter #
+        noSel = noSel.refine("passMETFlags", cut=METFilter(t.Flag, era, self.isMC(sample)) )
+        
+        psISRSyst = op.systematic(op.c_float(1.), name="psISR", up=t.PSWeight[0], down=t.PSWeight[2])
+        noSel = noSel.refine("psISR", weight=psISRSyst)
+        mcWgts = []
+        mcWgts += [op.systematic(op.c_float(1.), **{f"qcdScale{i:d}": t.LHEScaleWeight[i] for i in (0, 1, 3, 5, 7, 8)}),]
+        noSel = noSel.refine("muFmuRScaleWeight", weight=mcWgts)
+        
 
         noSel = noSel.refine("PV", cut=op.AND(t.PV.npvsGood>=1, t.PV.ndof>5))
 
